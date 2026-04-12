@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | João Victor</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gradient-animate text-white overflow-x-hidden">
+
+    <nav class="fixed top-0 w-full z-[100] glass px-6 py-4 flex justify-between items-center">
+        <div class="text-xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+            JV.Dev
+        </div>
+        <button id="dotsBtn" class="p-2 hover:bg-white/10 rounded-full transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </nav>
+
+    <div id="menu-dropdown" class="hidden fixed top-20 right-6 z-[110] glass p-4 rounded-xl w-48 shadow-2xl">
+        <ul class="flex flex-col gap-4">
+            <li><a href="#" class="hover:text-blue-400 block">Início</a></li>
+            <li><a href="#sobre" class="hover:text-blue-400 block">Sobre</a></li>
+            <li><a href="#projetos" class="hover:text-blue-400 block">Projetos</a></li>
+            <li><a href="#contato" class="hover:text-blue-400 block">Contato</a></li>
+        </ul>
+    </div>
+
+   <header class="min-h-[85vh] relative flex flex-col justify-center items-center text-center p-6 overflow-hidden">
+    
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2" style="animation-delay: 3s;"></div>
+    
+        <div class="absolute inset-0 opacity-[0.03] pointer-events-none" 
+         style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;">
+         </div>
+
+        <div class="absolute hidden lg:block left-20 top-1/3 opacity-20 animate-bounce" style="animation-duration: 4s;">
+        <span class="text-4xl font-bold text-blue-400 font-mono">JS</span>
+        </div>
+        <div class="absolute hidden lg:block right-20 top-1/4 opacity-20 animate-bounce" style="animation-duration: 5s;">
+        <span class="text-4xl font-bold text-emerald-400 font-mono">SQL</span>
+         </div>
+         <div class="absolute hidden lg:block left-32 bottom-1/4 opacity-20 animate-bounce" style="animation-duration: 6s;">
+        <span class="text-4xl font-bold text-yellow-500 font-mono">Py</span>
+         </div>
+         <div class="absolute hidden lg:block right-32 bottom-1/3 opacity-20 animate-bounce" style="animation-duration: 7s;">
+        <span class="text-3xl font-bold text-blue-500 font-mono">{ }</span>
+         </div>
+
+         <div data-aos="fade-up" class="relative z-10 w-full max-w-5xl">
+         <h1 class="hero-title text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-emerald-400 to-blue-500 bg-clip-text text-transparent">
+            João Victor Custodio
+            </h1>
+        
+        <div class="w-12 h-[2px] bg-blue-500/50 mx-auto mb-8"></div>
+
+        <p class="text-base md:text-lg lg:text-xl text-slate-400 mb-12 font-light tracking-wide">
+            Planejador de Manutenção <span class="text-blue-500/30 mx-2">|</span> 
+            Estudante de ADS <span class="text-blue-500/30 mx-2">|</span> 
+            Analista de Dados
+        </p>
+
+        <div class="flex flex-row gap-6 justify-center items-center">
+            <a href="https://github.com/SEU-USUARIO" target="_blank"
+               class="px-10 py-3 rounded-full font-bold bg-white text-slate-900 transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] active:scale-95">
+                GitHub
+            </a>
+            
+            <a href="#projetos" class="text-slate-400 hover:text-white transition-all flex items-center gap-2 font-medium group text-sm">
+                Ver Portfólio 
+                <span class="group-hover:translate-y-1 transition-transform inline-block">↓</span>
+            </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre" class="max-w-4xl mx-auto px-6 py-24 text-center" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-6 italic text-blue-400">Onde a Manutenção encontra o Código</h2>
+        <div class="glass p-8 rounded-3xl">
+            <p class="text-lg text-slate-300 leading-relaxed">
+                Com 3 anos de experiência em <b>Planejamento de Manutenção e Controle de Custos na Ambev</b>, desenvolvi um olhar crítico para eficiência. 
+                Hoje, na graduação de <b>ADS</b>, traduzo essa expertise para o desenvolvimento de sistemas e análise de dados.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold mb-12 border-l-4 border-blue-500 pl-4">Meus Projetos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="glass p-6 rounded-2xl card-hover group" data-aos="fade-up">
+                <a href="projetos/ecommerce.html" class="glass p-6 rounded-2xl card-hover group block" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-40 bg-blue-600 rounded-lg mb-4 flex items-center justify-center text-4xl group-hover:scale-110 transition-transform">🛒</div>
+                    <h3 class="text-xl font-semibold mb-2 text-center">Loja Digital E-commerce</h3>
+                    <p class="text-slate-400 text-sm text-center">Plataforma completa com checkout e integração.</p>
+                    <div class="mt-4 text-blue-400 text-xs font-bold text-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        CLIQUE PARA VER DETALHES →
+                    </div>
+                </a>
+            </div>
+
+            <div class="glass p-6 rounded-2xl card-hover group" data-aos="fade-up" data-aos-delay="100">
+                <a href="projetos/wordpress.html" class="glass p-6 rounded-2xl card-hover group block" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-40 bg-emerald-600 rounded-lg mb-4 flex items-center justify-center text-4xl group-hover:scale-110 transition-transform">🌐</div>
+                        <h3 class="text-xl font-semibold mb-2 text-center">Site WordPress</h3>
+                        <p class="text-slate-400 text-sm text-center">Site otimizado para SEO e performance.</p>
+                        <div class="mt-4 text-emerald-400 text-xs font-bold text-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        CLIQUE PARA VER DETALHES →
+                    </div>
+                </a>
+            </div>
+
+            <div class="glass p-6 rounded-2xl card-hover group" data-aos="fade-up" data-aos-delay="200">
+                <a href="projetos/powerbi.html" class="glass p-6 rounded-2xl card-hover group block" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-40 bg-yellow-600 rounded-lg mb-4 flex items-center justify-center text-4xl group-hover:scale-110 transition-transform">📊</div>
+                    <h3 class="text-xl font-semibold mb-2 text-center">Power BI</h3>
+                    <p class="text-slate-400 text-sm text-center">Dashboards de KPIs e controle de custos.</p>
+                    <div class="mt-4 text-blue-400 text-xs font-bold text-center opacity-0 group-hover:opacity-100 transition-opacity">
+                     CLIQUE PARA VER DETALHES →
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contato" class="max-w-4xl mx-auto px-6 py-20 text-center" data-aos="zoom-in">
+        <h2 class="text-3xl font-bold mb-8 italic">Bora tirar um projeto do papel?</h2>
+        <div class="flex flex-wrap justify-center gap-6">
+           <a href="https://wa.me/5514998457182" target="_blank"
+              class="glass px-8 py-4 rounded-full font-bold flex items-center gap-3 hover:bg-white/10 transition-all group">
+             <span>WhatsApp</span>
+            <span class="group-hover:translate-x-2 transition-transform">→</span>
+            </a>
+    
+            <a href="https://www.linkedin.com/in/SEU-PERFIL" target="_blank"
+                class="glass px-8 py-4 rounded-full font-bold flex items-center gap-3 hover:bg-white/10 transition-all group">
+                <span>LinkedIn</span>
+                <span class="group-hover:translate-x-2 transition-transform">→</span>
+            </a>
+
+            <a href="mailto:joaovcustodio@outlook.com"
+                 class="glass px-8 py-4 rounded-full font-bold flex items-center gap-3 hover:bg-white/10 transition-all group">
+                <span>Email</span>
+                <span class="group-hover:translate-x-2 transition-transform">→</span>
+            </a>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
