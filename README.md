@@ -3,7 +3,7 @@
 Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi desenvolvido para centralizar meus projetos acadêmicos de **Análise e Desenvolvimento de Sistemas (ADS)**, minhas competências em **Análise de Dados** e minha experiência profissional.
 
 ## 🔗 Link para o Projeto
-> **[CLIQUE AQUI PARA ACESSAR MEU PORTFÓLIO](https://jvCustodio1.github.io/Portif-lio/)**
+> **[CLIQUE AQUI PARA ACESSAR MEU PORTFÓLIO](https://jvCustodio1.github.io/portfolio/)**
 
 ---
 
