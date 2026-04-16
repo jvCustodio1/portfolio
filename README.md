@@ -44,4 +44,4 @@ O projeto está organizado para facilitar a manutenção técnica:
 * **E-mail:** joaovcustodio@outlook.com
 * **WhatsApp:** (14) 99845-7182
 
-Desenvolvido com ❤️ por João Victor.
+Desenvolvido por João Victor.

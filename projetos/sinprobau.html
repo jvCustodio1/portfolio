@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Sinprobau - João Victor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .tech-badge {
+            background: rgba(59, 130, 246, 0.2);
+            border: 1px solid rgba(59, 130, 246, 0.5);
+            padding: 4px 12px;
+            border-radius: 99px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+        .bg-gradient-animate {
+            background: linear-gradient(-45deg, #0f172a, #1e1b4b, #2e1065, #1e1b4b);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-gradient-animate text-white min-h-screen p-6 md:p-12">
+    <div class="max-w-5xl mx-auto">
+        <a href="../index.html" class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors mb-8 group">
+            <span class="mr-2 group-hover:-translate-x-1 transition-transform">←</span> Voltar ao Portfólio
+        </a>
+
+        <header class="mb-12">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                <div>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">
+                        Sinpro-bau
+                    </h1>
+                    <p class="text-xl text-gray-300">Sindicato dos Professores de Bauru | Full Stack & Cloud</p>
+                </div>
+                <div class="flex flex-wrap gap-2 max-w-sm">
+                    <span class="tech-badge">Laravel</span>
+                    <span class="tech-badge">Firebase Auth</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">Firebase Storage</span>
+                    <span class="tech-badge">Chatbot</span>
+                    <span class="tech-badge">Vercel</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            
+            <div class="glass p-8 rounded-3xl col-span-1 md:col-span-2 space-y-8">
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 text-blue-400 flex items-center">
+                        <span class="mr-2">🛠️</span> Tecnologias e Arquitetura
+                    </h2>
+                    <ul class="space-y-4 text-gray-300">
+                        <li><strong>Backend & API:</strong> Desenvolvido com Laravel (PHP), utilizando uma arquitetura robusta para gerenciar o CRUD de conteúdos administrativos e notícias.</li>
+                        <li><strong>Cloud & Segurança:</strong> Integração com <b>Firebase Authentication</b> para gestão segura de associados e <b>Firebase Storage</b> para armazenamento escalável de documentos e mídias.</li>
+                        <li><strong>Banco de Dados:</strong> MySQL para persistência de dados administrativos e estruturação de informações do sindicato.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 text-cyan-400 flex items-center">
+                        <span class="mr-2">✨</span> Funcionalidades Principais
+                    </h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+                            <h3 class="font-bold text-blue-300 mb-2">Autenticação</h3>
+                            <p class="text-sm text-gray-400">Login social e e-mail via Firebase, permitindo acesso exclusivo a áreas restritas para professores.</p>
+                        </div>
+                        <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+                            <h3 class="font-bold text-blue-300 mb-2">Gestão de Conteúdo</h3>
+                            <p class="text-sm text-gray-400">Painel administrativo completo para controle de notícias, convênios e comunicados oficiais.</p>
+                        </div>
+                        <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+                            <h3 class="font-bold text-blue-300 mb-2">Atendimento IA</h3>
+                            <p class="text-sm text-gray-400">Chatbot integrado para suporte rápido e triagem de dúvidas frequentes dos usuários.</p>
+                        </div>
+                        <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+                            <h3 class="font-bold text-blue-300 mb-2">Cloud Storage</h3>
+                            <p class="text-sm text-gray-400">Upload de documentos relevantes diretamente para a nuvem, facilitando o acesso móvel.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="space-y-6">
+                <div class="glass p-8 rounded-3xl">
+                    <h2 class="text-xl font-bold mb-4 text-green-400">Soft Skills</h2>
+                    <ul class="text-sm text-gray-300 space-y-3">
+                        <li class="flex items-start"><span class="mr-2">🤝</span> Trabalho em Equipe Multidisciplinar</li>
+                        <li class="flex items-start"><span class="mr-2">🗣️</span> Levantamento de Requisitos (Cliente Real)</li>
+                        <li class="flex items-start"><span class="mr-2">⚡</span> Metodologias Ágeis</li>
+                        <li class="flex items-start"><span class="mr-2">🎯</span> Entrega de Valor Contínua</li>
+                    </ul>
+                </div>
+
+                <div class="glass p-8 rounded-3xl">
+                    <h2 class="text-xl font-bold mb-4 text-purple-400">Status do Projeto</h2>
+                    <p class="text-sm text-gray-300 mb-4">Projeto entregue e funcional, utilizado pelo sindicato para modernização digital.</p>
+                    <div class="w-full bg-white/10 rounded-full h-2">
+                        <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
+                    </div>
+                    <p class="text-[10px] mt-2 text-gray-500">CONCLUÍDO EM 2025</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass p-10 rounded-3xl text-center border-2 border-blue-500/20">
+            <h2 class="text-2xl font-bold mb-6">Explore o Código e a Aplicação</h2>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://github.com/NicolasLobosDEV/SinProBau_2025_01" target="_blank" class="bg-white text-black hover:bg-gray-200 px-10 py-4 rounded-full font-bold transition-all shadow-lg shadow-white/5">
+                    GitHub do Repositório
+                </a>
+                <a href="https://sinprobauru.com.br" target="_blank" class="bg-blue-600 hover:bg-blue-700 px-10 py-4 rounded-full font-bold transition-all shadow-lg shadow-blue-500/20">
+                    Acessar Site Online
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
