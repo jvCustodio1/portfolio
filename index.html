@@ -49,107 +49,123 @@
             </div> 
     </div>
     
-    <header id="inicio" class="min-h-[70vh] relative flex flex-col justify-center items-center text-center p-6 pt-32 overflow-hidden">
+    <header id="inicio" class="min-h-[60vh] w-full flex flex-col justify-center items-center text-center pt-40 pb-40 relative overflow-hidden">
     
+        <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-[0.05] select-none">
+            <div class="absolute top-40 -left-10 font-mono text-sm leading-relaxed rotate-12">
+                &lt;script&gt;<br>
+                const dev = "João Victor";<br>
+                const skills = ["ADS", "Data", "Maintenance"];<br>
+                function createSolution() {<br>
+                &nbsp;&nbsp;return codes.map(c => c.optimize());<br>
+                }<br>
+                &lt;/script&gt;
+            </div>
+            <div class="absolute bottom-20 -right-10 font-mono text-sm leading-relaxed -rotate-12">
+                SELECT * FROM skills WHERE expertise = 'high';<br>
+                UPDATE maintenance_plan SET status = 'optimized';<br>
+                -- Analisando dados...<br>
+                JOIN ambev_metrics ON efficiency.id = maintenance.id;
+            </div>
+        </div>
+
         <div class="glow glow-1"></div>
         <div class="glow glow-2" style="animation-delay: 3s;"></div>
 
-        <div class="absolute inset-0 opacity-[0.03] pointer-events-none" 
-            style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;">
-        </div>
-
-        <div class="absolute hidden lg:block left-20 top-1/3 opacity-20 animate-bounce" style="animation-duration: 4s;">
-            <span class="text-4xl font-bold text-blue-400 font-mono">JS</span>
-        </div>
-        <div class="absolute hidden lg:block right-20 top-1/4 opacity-20 animate-bounce" style="animation-duration: 5s;">
-            <span class="text-4xl font-bold text-emerald-400 font-mono">SQL</span>
-        </div>
-        <div class="absolute hidden lg:block left-32 bottom-1/4 opacity-20 animate-bounce" style="animation-duration: 6s;">
-            <span class="text-4xl font-bold text-yellow-500 font-mono">Py</span>
-        </div>
-        <div class="absolute hidden lg:block right-32 bottom-1/3 opacity-20 animate-bounce" style="animation-duration: 7s;">
-            <span class="text-3xl font-bold text-blue-500 font-mono">{ }</span>
-        </div>
-
-        <div data-aos="fade-up" class="relative z-10 w-full max-w-5xl">
-            <h1 class="hero-title text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-emerald-400 to-blue-500 bg-clip-text text-transparent">
-                João Victor Custodio
-            </h1>
-            
-            <div class="w-12 h-[2px] bg-blue-500/50 mx-auto mb-8"></div>
-
-            <p class="text-base md:text-lg lg:text-xl text-slate-400 mb-10 font-light tracking-wide">
-                Planejador de Manutenção <span class="text-blue-500/30 mx-2">|</span> 
-                Estudante de ADS <span class="text-blue-500/30 mx-2">|</span> 
-                Analista de Dados
-            </p>
-
-            <div class="flex flex-row gap-6 justify-center items-center">
-                <a href="https://github.com/SEU-USUARIO" target="_blank"
-                class="px-10 py-3 rounded-full font-bold bg-white text-slate-900 transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] active:scale-95">
-                    GitHub
-                </a>
-                
-                <a href="#projetos" class="text-slate-400 hover:text-white transition-all flex items-center gap-2 font-medium group text-sm">
-                    Ver Portfólio 
-                    <span class="group-hover:translate-y-1 transition-transform inline-block">↓</span>
-                </a>
+        <div class="absolute hidden lg:block left-[10%] top-[20%] opacity-20 animate-bounce" style="animation-duration: 4s;">
+                <span class="text-6xl font-bold text-blue-400/40 font-mono">JS</span>
             </div>
+            <div class="absolute hidden lg:block right-[10%] top-[15%] opacity-20 animate-bounce" style="animation-duration: 5s;">
+                <span class="text-6xl font-bold text-emerald-400/40 font-mono">SQL</span>
+            </div>
+            <div class="absolute hidden lg:block left-[15%] bottom-[15%] opacity-20 animate-bounce" style="animation-duration: 6s;">
+                <span class="text-5xl font-bold text-yellow-500/40 font-mono">Py</span>
+            </div>
+            <div class="absolute hidden lg:block right-[15%] bottom-[20%] opacity-20 animate-bounce" style="animation-duration: 7s;">
+                <span class="text-5xl font-bold text-blue-500/40 font-mono">{ }</span>
+        </div>
+
+       <div data-aos="fade-up" class="relative z-10 w-full max-w-5xl">
+        <h1 class="hero-title text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-emerald-400 to-blue-500 bg-clip-text text-transparent">
+            João Victor Custodio
+        </h1>
+        
+        <div class="w-32 h-[2px] bg-blue-500/50 mx-auto mb-8"></div>
+
+        <p class="text-base md:text-lg lg:text-xl text-slate-400 mb-12 font-light tracking-wide">
+            Planejador de Manutenção | Estudante de ADS | Analista de Dados
+        </p>
+
+        <div class="flex flex-row gap-6 justify-center items-center">
+            <a href="https://github.com/SEU-USUARIO" target="_blank"
+               class="px-10 py-3 rounded-full font-bold bg-white text-slate-900 transition-all hover:scale-105">
+                GitHub
+            </a>
+            <a href="#projetos" class="text-slate-400 hover:text-white transition-all flex items-center gap-2">
+                Ver Portfólio ↓
+            </a>
+        </div>
+    </div>
         </div>
     </header>
 
-    <section id="sobre" class="max-w-4xl mx-auto px-6 py-24 text-center" data-aos="fade-up">
-        <h2 class="text-3xl font-bold mb-6 italic text-blue-400">Onde a Manutenção encontra o Código</h2>
-        <div class="glass p-8 rounded-3xl">
-            <p class="text-lg text-slate-300 leading-relaxed">
-                Com 3 anos de experiência em <b>Planejamento de Manutenção e Controle de Custos na Ambev</b>, desenvolvi um olhar crítico para eficiência. 
-                Hoje, na graduação de <b>ADS</b>, traduzo essa expertise para o desenvolvimento de sistemas e análise de dados.
-            </p>
-        </div>
+    <section id="sobre" class="w-full max-w-4xl mx-auto px-6 pt-32 pb-32 text-center relative z-10" data-aos="fade-up">
+    
+            <h2 class="text-2xl md:text-3xl font-bold mb-10 text-blue-400 italic">
+                Onde a Manutenção encontra o Código
+            </h2>
+
+            <div class="glass p-8 md:p-10 rounded-3xl border border-white/10">
+                <p class="text-slate-300 leading-relaxed text-lg">
+                    Com 3 anos de experiência em <strong class="text-white">Planejamento de Manutenção e Controle de Custos na Ambev</strong>, 
+                    desenvolvi um olhar crítico para eficiência. Hoje, na graduação de <strong class="text-white">ADS</strong>, 
+                    traduzo essa expertise para o desenvolvimento de sistemas e análise de dados.
+                </p>
+            </div>
     </section>
 
-    <section class="mb-20 px-6" data-aos="fade-up">
+    <section id="skills" class="mb-10 px-6" data-aos="fade-up">
         <h2 class="text-3xl font-bold mb-10 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-        Stack Tecnológica
+            Stack Tecnológica
         </h2>
-    
-         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="glass p-8 rounded-3xl border border-white/10 flex flex-col">
-            <h3 class="text-blue-400 font-bold mb-6 flex items-center text-xl">
-                <span class="mr-2">🎨</span> Frontend
-            </h3>
-            <div class="flex flex-wrap gap-3">
-                <span class="tech-badge bg-blue-500/10 border-blue-500/30 px-4 py-2 rounded-full text-sm">HTML5</span>
-                <span class="tech-badge bg-blue-500/10 border-blue-500/30 px-4 py-2 rounded-full text-sm">CSS3</span>
-                <span class="tech-badge bg-blue-500/10 border-blue-500/30 px-4 py-2 rounded-full text-sm">Tailwind CSS</span>
-                <span class="tech-badge bg-blue-500/10 border-blue-500/30 px-4 py-2 rounded-full text-sm">JavaScript</span>
-            </div>
-        </div>
 
-        <div class="glass p-8 rounded-3xl border border-white/10 flex flex-col">
-            <h3 class="text-purple-400 font-bold mb-6 flex items-center text-xl">
-                <span class="mr-2">⚙️</span> Backend & Cloud
-            </h3>
-            <div class="flex flex-wrap gap-3">
-                <span class="tech-badge bg-purple-500/10 border-purple-500/30 px-4 py-2 rounded-full text-sm">PHP / Laravel</span>
-                <span class="tech-badge bg-purple-500/10 border-purple-500/30 px-4 py-2 rounded-full text-sm">MySQL</span>
-                <span class="tech-badge bg-purple-500/10 border-purple-500/30 px-4 py-2 rounded-full text-sm">Firebase</span>
-                <span class="tech-badge bg-purple-500/10 border-purple-500/30 px-4 py-2 rounded-full text-sm">API REST</span>
-            </div>
-        </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="glass card-frontend p-8 rounded-3xl border border-white/10 flex flex-col">
+                        <h3 class="text-blue-400 font-bold mb-6 flex items-center text-xl">
+                            <span class="mr-2">🎨</span> Frontend
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="tech-badge bg-blue-500/10 border-blue-500/30 px-4 py-2 rounded-full text-sm">HTML5</span>
+                            <span class="tech-badge bg-blue-500/10 border-blue-500/30 px-4 py-2 rounded-full text-sm">CSS3</span>
+                            <span class="tech-badge bg-blue-500/10 border-blue-500/30 px-4 py-2 rounded-full text-sm">Tailwind CSS</span>
+                            <span class="tech-badge bg-blue-500/10 border-blue-500/30 px-4 py-2 rounded-full text-sm">JavaScript</span>
+                        </div>
+                    </div>
 
-        <div class="glass p-8 rounded-3xl border border-white/10 flex flex-col">
-            <h3 class="text-green-400 font-bold mb-6 flex items-center text-xl">
-                <span class="mr-2">🚀</span> Outros
-            </h3>
-            <div class="flex flex-wrap gap-3">
-                <span class="tech-badge bg-green-500/10 border-green-500/30 px-4 py-2 rounded-full text-sm">Git / GitHub</span>
-                <span class="tech-badge bg-green-500/10 border-green-500/30 px-4 py-2 rounded-full text-sm">Power BI</span>
-                <span class="tech-badge bg-green-500/10 border-green-500/30 px-4 py-2 rounded-full text-sm">Chatbots</span>
-                <span class="tech-badge bg-green-500/10 border-green-500/30 px-4 py-2 rounded-full text-sm">Metodologias Ágeis</span>
-            </div>
-        </div>
-         
+                    <div class="glass card-backend p-8 rounded-3xl border border-white/10 flex flex-col">
+                        <h3 class="text-purple-400 font-bold mb-6 flex items-center text-xl">
+                            <span class="mr-2">⚙️</span> Backend & Cloud
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="tech-badge bg-purple-500/10 border-purple-500/30 px-4 py-2 rounded-full text-sm">PHP / Laravel</span>
+                            <span class="tech-badge bg-purple-500/10 border-purple-500/30 px-4 py-2 rounded-full text-sm">MySQL</span>
+                            <span class="tech-badge bg-purple-500/10 border-purple-500/30 px-4 py-2 rounded-full text-sm">Firebase</span>
+                            <span class="tech-badge bg-purple-500/10 border-purple-500/30 px-4 py-2 rounded-full text-sm">API REST</span>
+                        </div>
+                    </div>
+
+                    <div class="glass card-outros p-8 rounded-3xl border border-white/10 flex flex-col">
+                        <h3 class="text-green-400 font-bold mb-6 flex items-center text-xl">
+                            <span class="mr-2">🚀</span> Outros
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="tech-badge bg-green-500/10 border-green-500/30 px-4 py-2 rounded-full text-sm">Git / GitHub</span>
+                            <span class="tech-badge bg-green-500/10 border-green-500/30 px-4 py-2 rounded-full text-sm">Power BI</span>
+                            <span class="tech-badge bg-green-500/10 border-green-500/30 px-4 py-2 rounded-full text-sm">Chatbots</span>
+                            <span class="tech-badge bg-green-500/10 border-green-500/30 px-4 py-2 rounded-full text-sm">Metodologias Ágeis</span>
+                        </div>
+                    </div>
+                </div>
     </section>
 
         <section class="mb-20 px-6" data-aos="fade-up">
@@ -239,7 +255,7 @@
                 </div>
         </section>
 
-    <section id="projetos" class="max-w-6xl mx-auto px-6 py-20">
+    <section id="projetos" class="max-w-6xl mx-auto px-6 py-10">
         <h2 class="text-3xl font-bold mb-12 border-l-4 border-blue-500 pl-4">Meus Projetos</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
