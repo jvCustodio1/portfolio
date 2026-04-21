@@ -1,6 +1,8 @@
+/* --- CONFIGURAÇÕES GERAIS --- */
 body { 
     font-family: 'Inter', sans-serif; 
     margin: 0;
+    color: white;
 }
 
 html, body {
@@ -9,13 +11,31 @@ html, body {
     scroll-behavior: smooth;
 }
 
+/* --- VISIBILIDADE GLOBAL (Garante que nada suma) --- */
+header, section, main {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+/* Remove qualquer margem que esteja empurrando as seções */
+header + section {
+    margin-top: 0 !important;
+}
+header {
+    display: flex !important;
+    min-height: 70vh !important; /* Reduzi de 85 para 70 */
+    padding-top: 100px !important; /* Espaço para não ficar sob a nav */
+    padding-bottom: 20px !important; /* Diminui a distância na base */
+}
+
+/* --- EFEITO GLASS --- */
 .glass {
     background: rgba(255, 255, 255, 0.03) !important;
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Efeito de Flutuar nos Cards */
+/* --- CARDS E INTERAÇÃO --- */
 .card-hover {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
 }
@@ -26,7 +46,7 @@ html, body {
     border: 1px solid rgba(96, 165, 250, 0.5) !important;
 }
 
-/* Fundo Animado */
+/* --- FUNDO ANIMADO --- */
 .bg-gradient-animate {
     background: linear-gradient(-45deg, #0f172a, #1e293b, #0f172a, #1e1b4b);
     background-size: 400% 400%;
@@ -39,60 +59,7 @@ html, body {
     100% { background-position: 0% 50%; }
 }
 
-header, section {
-    position: relative;
-    z-index: 10;
-}
-/* Aproxima as seções */
-header + section {
-    margin-top: -5vh; /* Puxa o "Sobre" um pouco para cima */
-}
-
-/* Animação suave para os glows de fundo */
-@keyframes pulse {
-    0%, 100% { opacity: 0.5; transform: scale(1); }
-    50% { opacity: 0.8; transform: scale(1.1); }
-}
-
-.animate-pulse {
-    animation: pulse 8s ease-in-out infinite;
-}
-
-/* Melhoria no título */
-h1 {
-    letter-spacing: -0.02em;
-    line-height: 1.1 !important;
-}
-/* Ajuste de Proporção e Tipografia */
-header {
-    padding-top: 60px;
-}
-
-h1 {
-    letter-spacing: -0.03em;
-    line-height: 1.2;
-}
-
-/* Evita quebras de linha em telas grandes */
-@media (min-width: 1024px) {
-    .hero-title {
-        white-space: nowrap;
-    }
-}
-
-/* Manchas de luz ao fundo (Glows) */
-.glow-1 {
-    top: 20%;
-    left: 15%;
-    background: rgba(59, 130, 246, 0.15);
-}
-
-.glow-2 {
-    bottom: 20%;
-    right: 15%;
-    background: rgba(16, 185, 129, 0.15);
-}
-
+/* --- GLOWS --- */
 .glow {
     position: absolute;
     width: 350px;
@@ -103,16 +70,43 @@ h1 {
     animation: pulse 8s ease-in-out infinite;
 }
 
+.glow-1 { top: 20%; left: 15%; background: rgba(59, 130, 246, 0.15); }
+.glow-2 { bottom: 20%; right: 15%; background: rgba(16, 185, 129, 0.15); }
+
 @keyframes pulse {
     0%, 100% { opacity: 0.4; transform: scale(1); }
     50% { opacity: 0.7; transform: scale(1.1); }
 }
 
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+/* --- MENU MOBILE (AJUSTADO) --- */
+#mobile-menu {
+    position: fixed !important;
+    top: 80px;
+    right: 24px;
+    width: 224px;
+    background: rgba(15, 23, 42, 0.95) !important;
+    backdrop-filter: blur(16px) saturate(180%);
+    z-index: 9999 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
 }
 
-.animate-bounce {
-    animation: bounce ease-in-out infinite;
+/* Lógica de exibição do menu */
+#mobile-menu.hidden {
+    display: none !important;
+}
+
+#mobile-menu:not(.hidden) {
+    display: block !important;
+    animation: slideIn 0.3s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-10px) scale(0.95); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (min-width: 768px) {
+    #mobile-menu { display: none !important; }
 }

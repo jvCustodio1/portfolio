@@ -17,67 +17,83 @@
         <div class="text-xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
             JV.Dev
         </div>
-        <button id="dotsBtn" class="p-2 hover:bg-white/10 rounded-full transition-all">
+        <button id="dotsBtn" class="p-2 hover:bg-white/10 rounded-full transition-all active:scale-90">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
         </button>
     </nav>
 
-    <div id="menu-dropdown" class="hidden fixed top-20 right-6 z-[110] glass p-4 rounded-xl w-48 shadow-2xl">
-        <ul class="flex flex-col gap-4">
-            <li><a href="#" class="hover:text-blue-400 block">Início</a></li>
-            <li><a href="#sobre" class="hover:text-blue-400 block">Sobre</a></li>
-            <li><a href="#projetos" class="hover:text-blue-400 block">Projetos</a></li>
-            <li><a href="#contato" class="hover:text-blue-400 block">Contato</a></li>
-        </ul>
+    <div id="mobile-menu" class="hidden fixed top-20 right-6 w-56 glass rounded-2xl border border-white/10 shadow-2xl z-[110] overflow-hidden">
+            <div class="flex flex-col p-2">
+                <a href="#inicio" class="px-4 py-3 rounded-xl hover:bg-white/10 transition-colors flex items-center gap-3 group">
+                    <span class="text-blue-400 group-hover:scale-110 transition-transform">🏠</span>
+                    <span class="font-medium text-gray-200">Início</span>
+                </a>
+                <a href="#sobre" class="px-4 py-3 rounded-xl hover:bg-white/10 transition-colors flex items-center gap-3 group">
+                    <span class="text-purple-400 group-hover:scale-110 transition-transform">👤</span>
+                    <span class="font-medium text-gray-200">Sobre</span>
+                </a>
+                <a href="#skills" class="px-4 py-3 rounded-xl hover:bg-white/10 transition-colors flex items-center gap-3 group">
+                    <span class="text-green-400 group-hover:scale-110 transition-transform">🛠️</span>
+                    <span class="font-medium text-gray-200">Stack</span>
+                </a>
+                <a href="#projetos" class="px-4 py-3 rounded-xl hover:bg-white/10 transition-colors flex items-center gap-3 group">
+                    <span class="text-orange-400 group-hover:scale-110 transition-transform">🚀</span>
+                    <span class="font-medium text-gray-200">Projetos</span>
+                </a>
+                <a href="#contato" class="px-4 py-3 rounded-xl hover:bg-white/10 transition-colors flex items-center gap-3 group">
+                    <span class="text-red-400 group-hover:scale-110 transition-transform">📩</span>
+                    <span class="font-medium text-gray-200">Contato</span>
+                </a>
+            </div> 
     </div>
-
-   <header class="min-h-[85vh] relative flex flex-col justify-center items-center text-center p-6 overflow-hidden">
+    
+    <header id="inicio" class="min-h-[70vh] relative flex flex-col justify-center items-center text-center p-6 pt-32 overflow-hidden">
     
         <div class="glow glow-1"></div>
         <div class="glow glow-2" style="animation-delay: 3s;"></div>
-    
+
         <div class="absolute inset-0 opacity-[0.03] pointer-events-none" 
-         style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;">
-         </div>
+            style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;">
+        </div>
 
         <div class="absolute hidden lg:block left-20 top-1/3 opacity-20 animate-bounce" style="animation-duration: 4s;">
-        <span class="text-4xl font-bold text-blue-400 font-mono">JS</span>
+            <span class="text-4xl font-bold text-blue-400 font-mono">JS</span>
         </div>
         <div class="absolute hidden lg:block right-20 top-1/4 opacity-20 animate-bounce" style="animation-duration: 5s;">
-        <span class="text-4xl font-bold text-emerald-400 font-mono">SQL</span>
-         </div>
-         <div class="absolute hidden lg:block left-32 bottom-1/4 opacity-20 animate-bounce" style="animation-duration: 6s;">
-        <span class="text-4xl font-bold text-yellow-500 font-mono">Py</span>
-         </div>
-         <div class="absolute hidden lg:block right-32 bottom-1/3 opacity-20 animate-bounce" style="animation-duration: 7s;">
-        <span class="text-3xl font-bold text-blue-500 font-mono">{ }</span>
-         </div>
+            <span class="text-4xl font-bold text-emerald-400 font-mono">SQL</span>
+        </div>
+        <div class="absolute hidden lg:block left-32 bottom-1/4 opacity-20 animate-bounce" style="animation-duration: 6s;">
+            <span class="text-4xl font-bold text-yellow-500 font-mono">Py</span>
+        </div>
+        <div class="absolute hidden lg:block right-32 bottom-1/3 opacity-20 animate-bounce" style="animation-duration: 7s;">
+            <span class="text-3xl font-bold text-blue-500 font-mono">{ }</span>
+        </div>
 
-         <div data-aos="fade-up" class="relative z-10 w-full max-w-5xl">
-         <h1 class="hero-title text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-emerald-400 to-blue-500 bg-clip-text text-transparent">
-            João Victor Custodio
+        <div data-aos="fade-up" class="relative z-10 w-full max-w-5xl">
+            <h1 class="hero-title text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-emerald-400 to-blue-500 bg-clip-text text-transparent">
+                João Victor Custodio
             </h1>
-        
-        <div class="w-12 h-[2px] bg-blue-500/50 mx-auto mb-8"></div>
-
-        <p class="text-base md:text-lg lg:text-xl text-slate-400 mb-12 font-light tracking-wide">
-            Planejador de Manutenção <span class="text-blue-500/30 mx-2">|</span> 
-            Estudante de ADS <span class="text-blue-500/30 mx-2">|</span> 
-            Analista de Dados
-        </p>
-
-        <div class="flex flex-row gap-6 justify-center items-center">
-            <a href="https://github.com/SEU-USUARIO" target="_blank"
-               class="px-10 py-3 rounded-full font-bold bg-white text-slate-900 transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] active:scale-95">
-                GitHub
-            </a>
             
-            <a href="#projetos" class="text-slate-400 hover:text-white transition-all flex items-center gap-2 font-medium group text-sm">
-                Ver Portfólio 
-                <span class="group-hover:translate-y-1 transition-transform inline-block">↓</span>
-            </a>
+            <div class="w-12 h-[2px] bg-blue-500/50 mx-auto mb-8"></div>
+
+            <p class="text-base md:text-lg lg:text-xl text-slate-400 mb-10 font-light tracking-wide">
+                Planejador de Manutenção <span class="text-blue-500/30 mx-2">|</span> 
+                Estudante de ADS <span class="text-blue-500/30 mx-2">|</span> 
+                Analista de Dados
+            </p>
+
+            <div class="flex flex-row gap-6 justify-center items-center">
+                <a href="https://github.com/SEU-USUARIO" target="_blank"
+                class="px-10 py-3 rounded-full font-bold bg-white text-slate-900 transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] active:scale-95">
+                    GitHub
+                </a>
+                
+                <a href="#projetos" class="text-slate-400 hover:text-white transition-all flex items-center gap-2 font-medium group text-sm">
+                    Ver Portfólio 
+                    <span class="group-hover:translate-y-1 transition-transform inline-block">↓</span>
+                </a>
             </div>
         </div>
     </header>
@@ -92,6 +108,137 @@
         </div>
     </section>
 
+    <section class="mb-20 px-6" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-10 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+        Stack Tecnológica
+        </h2>
+    
+         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="glass p-8 rounded-3xl border border-white/10 flex flex-col">
+            <h3 class="text-blue-400 font-bold mb-6 flex items-center text-xl">
+                <span class="mr-2">🎨</span> Frontend
+            </h3>
+            <div class="flex flex-wrap gap-3">
+                <span class="tech-badge bg-blue-500/10 border-blue-500/30 px-4 py-2 rounded-full text-sm">HTML5</span>
+                <span class="tech-badge bg-blue-500/10 border-blue-500/30 px-4 py-2 rounded-full text-sm">CSS3</span>
+                <span class="tech-badge bg-blue-500/10 border-blue-500/30 px-4 py-2 rounded-full text-sm">Tailwind CSS</span>
+                <span class="tech-badge bg-blue-500/10 border-blue-500/30 px-4 py-2 rounded-full text-sm">JavaScript</span>
+            </div>
+        </div>
+
+        <div class="glass p-8 rounded-3xl border border-white/10 flex flex-col">
+            <h3 class="text-purple-400 font-bold mb-6 flex items-center text-xl">
+                <span class="mr-2">⚙️</span> Backend & Cloud
+            </h3>
+            <div class="flex flex-wrap gap-3">
+                <span class="tech-badge bg-purple-500/10 border-purple-500/30 px-4 py-2 rounded-full text-sm">PHP / Laravel</span>
+                <span class="tech-badge bg-purple-500/10 border-purple-500/30 px-4 py-2 rounded-full text-sm">MySQL</span>
+                <span class="tech-badge bg-purple-500/10 border-purple-500/30 px-4 py-2 rounded-full text-sm">Firebase</span>
+                <span class="tech-badge bg-purple-500/10 border-purple-500/30 px-4 py-2 rounded-full text-sm">API REST</span>
+            </div>
+        </div>
+
+        <div class="glass p-8 rounded-3xl border border-white/10 flex flex-col">
+            <h3 class="text-green-400 font-bold mb-6 flex items-center text-xl">
+                <span class="mr-2">🚀</span> Outros
+            </h3>
+            <div class="flex flex-wrap gap-3">
+                <span class="tech-badge bg-green-500/10 border-green-500/30 px-4 py-2 rounded-full text-sm">Git / GitHub</span>
+                <span class="tech-badge bg-green-500/10 border-green-500/30 px-4 py-2 rounded-full text-sm">Power BI</span>
+                <span class="tech-badge bg-green-500/10 border-green-500/30 px-4 py-2 rounded-full text-sm">Chatbots</span>
+                <span class="tech-badge bg-green-500/10 border-green-500/30 px-4 py-2 rounded-full text-sm">Metodologias Ágeis</span>
+            </div>
+        </div>
+         
+    </section>
+
+        <section class="mb-20 px-6" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-10 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                    Formação Acadêmica & Especializações
+                </h2>
+
+                <div class="max-w-6xl mx-auto space-y-8">
+                    <div class="glass p-8 rounded-3xl border border-blue-500/20 shadow-lg hover:shadow-blue-500/10 hover:border-blue-500/40 transition-all duration-300">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Análise e Desenvolvimento de Sistemas</h3>
+                                <p class="text-blue-400 font-semibold">Unisagrado — Bauru-SP</p>
+                            </div>
+                            <span class="bg-blue-500/10 text-blue-400 px-4 py-1 rounded-full border border-blue-500/30 font-bold text-xs">jan/2024 — jul/2026</span>
+                        </div>
+                        
+                        <div class="border-t border-white/5 pt-6">
+                            <p class="text-gray-300 text-sm mb-6">
+                                Graduação baseada em **Metodologia de Bootcamp**, com foco em entregas práticas e tecnologias emergentes.
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8 text-[13px] text-gray-400">
+                                <div class="flex items-start gap-3"><span class="text-blue-500">✔</span> <strong>Desenvolvimento de Sistemas:</strong> Arquitetura e soluções escaláveis.</div>
+                                <div class="flex items-start gap-3"><span class="text-blue-500">✔</span> <strong>Banco de Dados & Análise:</strong> Modelagem e estruturação de dados.</div>
+                                <div class="flex items-start gap-3"><span class="text-blue-500">✔</span> <strong>Inovação e IoT:</strong> Prototipagem de soluções inteligentes.</div>
+                                <div class="flex items-start gap-3"><span class="text-blue-500">✔</span> <strong>Prototipação Low Code & Web:</strong> Interfaces modernas e responsivas.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        
+                        <div class="glass p-6 rounded-2xl border border-white/10 flex flex-col justify-between hover:scale-105 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 group">
+                            <div>
+                                <span class="text-2xl mb-3 block group-hover:bounce">💻</span>
+                                <h4 class="font-bold text-sm mb-1">Desenvolvimento Web</h4>
+                                <p class="text-[10px] text-gray-500 uppercase mb-4">Udemy / Cod3r</p>
+                            </div>
+                            <ul class="text-[11px] text-gray-400 space-y-2 border-t border-white/5 pt-3">
+                                <li>• JavaScript ES6+, HTML5/CSS3</li>
+                                <li>• Aplicações SPA (Single Page)</li>
+                                <li>• Integração com APIs REST</li>
+                            </ul>
+                        </div>
+
+                        <div class="glass p-6 rounded-2xl border border-white/10 flex flex-col justify-between hover:scale-105 hover:border-yellow-500/50 hover:shadow-lg hover:shadow-yellow-500/5 transition-all duration-300 group">
+                            <div>
+                                <span class="text-2xl mb-3 block group-hover:bounce">📊</span>
+                                <h4 class="font-bold text-sm mb-1">Master Power BI — De A a Z</h4>
+                                <p class="text-[10px] text-gray-500 uppercase mb-4">Udemy / Felipe Mafra</p>
+                            </div>
+                            <ul class="text-[11px] text-gray-400 space-y-2 border-t border-white/5 pt-3">
+                                <li>• ETL avançado com Linguagem M e Power Query.</li>
+                                <li>• Modelagem de dados e cálculos com Linguagem DAX.</li>
+                                <li>• Publicação em Power BI Services e Servidores de BI.</li>
+                                <li>• Dashboards interativos integrados a Bancos de Dados.</li>
+                            </ul>
+                        </div>
+
+                        <div class="glass p-6 rounded-2xl border border-white/10 flex flex-col justify-between hover:scale-105 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300 group">
+                            <div>
+                                <span class="text-2xl mb-3 block group-hover:bounce">🗄️</span>
+                                <h4 class="font-bold text-sm mb-1">Banco de Dados SQL</h4>
+                                <p class="text-[10px] text-gray-500 uppercase mb-4">Udemy / Felipe Mafra</p>
+                            </div>
+                            <ul class="text-[11px] text-gray-400 space-y-2 border-t border-white/5 pt-3">
+                                <li>• Modelagem Relacional (Formas Normais e Relacionamentos).</li>
+                                <li>• Queries avançadas em MySQL, SQL Server e Oracle.</li>
+                                <li>• Criação de Triggers, Procedures, Functions e Views.</li>
+                                <li>• Administração de dados, Backups e Dicionário de Dados.</li>
+                            </ul>
+                        </div>
+
+                        <div class="glass p-6 rounded-2xl border border-white/10 flex flex-col justify-between hover:scale-105 hover:border-orange-500/50 hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 group">
+                            <div>
+                                <span class="text-2xl mb-3 block group-hover:bounce">🔥</span>
+                                <h4 class="font-bold text-sm mb-1">Firebase Cloud</h4>
+                                <p class="text-[10px] text-gray-500 uppercase mb-4">Certificação Prática</p>
+                            </div>
+                            <ul class="text-[11px] text-gray-400 space-y-2 border-t border-white/5 pt-3">
+                                <li>• Auth (Google, GitHub, E-mail/Senha).</li>
+                                <li>• Realtime Database e Cloud Storage.</li>
+                                <li>• Regras de segurança e Deploy automático.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
     <section id="projetos" class="max-w-6xl mx-auto px-6 py-20">
         <h2 class="text-3xl font-bold mb-12 border-l-4 border-blue-500 pl-4">Meus Projetos</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -102,7 +249,7 @@
                 🎓
                  </div>
         
-                <h3 class="text-xl font-semibold mb-2 text-center">Projeto Sinprobau</h3>
+                <h3 class="text-xl font-semibold mb-2 text-center">Projeto Sinpro-Bau</h3>
                 <p class="text-slate-400 text-sm text-center">Plataforma Full Stack com Laravel, MySQL e Chatbot.
                 </p>
         
